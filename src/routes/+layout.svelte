@@ -6,6 +6,7 @@
 	<img src="/images/firewatch.jpg" class="absolute object-cover w-full h-screen" alt="" />
 	<div class="absolute inset-0 bg-black opacity-25" />
 	<header class="absolute top-0 left-0 right-0 z-20">
+        <title>Randomize</title>
 		<nav class="container px-6 py-4 mx-auto md:px-12">
 			<div class="items-center justify-center md:flex">
 				<div class="flex items-center justify-between">
