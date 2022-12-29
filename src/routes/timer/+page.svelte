@@ -1,6 +1,6 @@
 <script lang="js">
     // @ts-ignore
-    import {hello} from "$lib/randomize"
+    import {timer} from "$lib/randomize"
 
     let min;
     let max;
@@ -38,7 +38,7 @@
                 <div>
                     <span class="block w-full rounded-md shadow-sm">
                         <button
-                            on:click={() => hello(min, max)}
+                            on:click={() => timer(min, max)}
                             type="button"
                             class="py-2 px-4  bg-violet-600 hover:bg-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
                         >

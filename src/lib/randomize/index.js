@@ -1,4 +1,4 @@
-export function hello(min = 0, max = 0) {
+export function timer(min = 0, max = 0) {
     let randomNumb = randomize(min, max);
     let randomTime = (Math.floor(Date.now() / 1000)) + (randomNumb * 60);
 
