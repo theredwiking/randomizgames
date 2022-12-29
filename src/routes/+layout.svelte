@@ -2,54 +2,39 @@
 	import '../app.css';
 </script>
 
-<div>
-    <nav class="bg-indigo-900">
-        <div class="px-8 mx-auto max-w-1xl">
-            <div class="flex items-center justify-between h-16">
-                <div class=" flex items-center">
-                    <div class="hidden md:block">
-                        <div class="flex items-baseline ml-10 space-x-4">
-                            <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-xl font-medium" href="/">
-                                Home
-                            </a>
-                            <a class="text-gray-800 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-xl font-medium" href="/timer">
-                                Timer
-                            </a>
-                            <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-xl font-medium" href="/dice">
-                                Dice
-                            </a>
-                        </div>
+<div class="relative h-screen overflow-hidden bg-indigo-900">
+	<img src="/images/firewatch.jpg" class="absolute object-cover w-full h-screen" alt="" />
+	<div class="absolute inset-0 bg-black opacity-25" />
+	<header class="absolute top-0 left-0 right-0 z-20">
+        <nav class="container px-6 py-4 mx-auto md:px-12">
+            <div class="items-center justify-center md:flex">
+                <div class="flex items-center justify-between">
+                    <div class="md:hidden">
+                        <button class="text-white focus:outline-none">
+                            <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                        </button>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="flex items-center ml-4 md:ml-6">
-                    </div>
-                </div>
-                <div class="flex -mr-2 md:hidden">
-                    <button class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
-                        <svg width="20" height="20" fill="currentColor" class="w-8 h-8" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
-                            </path>
-                        </svg>
-                    </button>
+                <div class="items-center hidden md:flex">
+                    <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300" href="/">
+                        Home
+                    </a>
+                    <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300" href="/timer">
+                        Timer
+                    </a>
+                    <a class="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300" href="/dice">
+                        Dice
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="md:hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/">
-                    Home
-                </a>
-                <a class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium" href="/timer">
-                    Timer
-                </a>
-                <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/dice">
-                    Dice
-                </a>
-            </div>
-        </div>
-    </nav>
+        </nav>
+	</header>
+	<div class="container relative z-10 flex items-center px-6 py-32 mx-auto md:px-12 xl:py-40">
+		<div class="relative z-10 flex flex-col items-center w-full">
+			<slot />
+		</div>
+	</div>
 </div>
-
-
-<slot />
