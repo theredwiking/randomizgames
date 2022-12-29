@@ -10,8 +10,8 @@ export function timer(min = 0, max = 0) {
     }
 }
 
-export function dice(max = 6) {
-
+export function dice(max) {
+    return randomize(1, max);
 }
 
 function randomize(min, max) {
