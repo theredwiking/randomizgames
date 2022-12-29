@@ -2,7 +2,7 @@
 	"name": "randomizgames",
 	"version": "0.0.1",
 	"private": true,
-    "author": "theredwiking",
+	"author": "theredwiking",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
