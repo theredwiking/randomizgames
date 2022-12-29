@@ -4,13 +4,10 @@ export function hello(min = 0, max = 0) {
 
     while (true) {
         if ((Math.floor(Date.now() / 1000)) == randomTime) {
-            let sound = new Audio('f');
-            sound.loop = false;
-            sound.play();
+            new Audio('/sounds/alarm.mp3').play();
             break;
         }
     }
-    console.log("hello");
 }
 
 function randomize(min, max) {

@@ -1,6 +1,6 @@
 <script lang="js">
     // @ts-ignore
-    import {hello} from "$lib/timer"
+    import {hello} from "$lib/randomize"
 
     let min;
     let max;
